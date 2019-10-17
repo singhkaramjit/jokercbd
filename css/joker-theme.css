@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+bord {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+	float: left;
+}
+
+img {
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: 'Oswald', sans-serif!important;
+}
+
+.Login-panel {
+	overflow-y: auto;
+	width: 100%;
+	float: left;
+	position: fixed;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.Login-panel .login-form {
+	width: 100%;
+	float: unset;
+	position: relative;
+	max-width: 380px;
+	margin: 0 auto;
+	display: list-item;
+	padding: 18px;
+}
+
+.Login-panel .login-form .logo {
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.Login-panel .login-form .logo img {
+	max-width: 187px;
+}
+
+.Login-panel .login-form .event-date {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+}
+
+.Login-panel .login-form .event-date span {
+	width: 100%;
+	float: left;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.Login-panel .login-form .lets-connect {
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.form {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.form .input-form {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.form .input-form input {
+	width: 100%;
+	float: left;
+	position: relative;
+	background: none;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #d1d1d1;
+	height: 48px;
+	line-height: 48px;
+	outline: none;
+	box-shadow: none;
+}
+
+.form .input-form .submit-btn {
+	background: #118F70;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	display: table;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.our-product {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 37%;
+}
+
+.our-product .heading {
+	width: 100%;
+	float: left;
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.our-product .heading:before {
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: 42%;
+	background: #fff;
+	left: 205px;
+	right: 75%;
+	top: 20px;
+}
+
+.our-product .pro-slider {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.our-product .pro-slider .product-slide .owl-item.active:first-child {}
+
+.our-product .pro-slider .product-slide .owl-stage-outer {
+	padding-left: 19px;
+	margin-left: -19px;
+}
+
+.our-product .pro-slider .product-slide .owl-carousel .owl-item {
+	margin: 0!important;
+	padding: 10px;
+}
+
+.our-product .pro-slider .product-slide .owl-stage {
+	padding: 50px 0;
+}
+
+.our-product .pro-slider .owl-carousel .owl-nav.disabled {
+	display: block;
+	position: absolute;
+	top: -52px;
+	color: #fff;
+	right: 38%;
+}
+
+.our-product .pro-slider .owl-carousel .owl-nav.disabled button {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 22px;
+	outline: none;
+}
+
+.owl-item.active.firstbox .product-box {
+	width: 100%;
+	background: black;
+	content: "";
+	left: 0;
+	height: calc(100% + 40px);
+	min-height: 150px;
+	z-index: -1;
+	box-shadow: 7px 5px 31px 0 #000;
+	transition: all .4s ease;
+	transform: scale(1.3);
+	margin-right: 40px;
+}
+
+.our-product .pro-slider .owl-carousel .owl-item {
+	padding-left: 25px;
+}
+
+.our-product .pro-slider .product-box {
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	background: #000;
+	min-height: 150px;
+	transition: all .4s ease;
+	transform: scale(1)
+}
+
+.our-product .pro-slider .product-box img {
+	max-width: 150px;
+	text-align: center;
+	margin: auto;
+}
+
+.header {
+	width: 100%;
+	float: left;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background: #16092587;
+}
+
+.header .navbar {
+	background: none!important;
+	padding: 6px 0px;
+}
+
+.header .navbar .navbar-brand img {
+	max-width: 136px;
+}
+
+.header .navbar .navbar-nav {}
+
+.header .navbar .navbar-nav .nav-item {}
+
+.header .navbar .navbar-nav .nav-item a.nav-link {
+	color: #fff;
+}
+
+.header .navbar .form-inline {}
+
+.header .navbar .form-inline .submit-btn {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	font-size: 13px;
+	background: #1e7e34;
+	border: 0;
+	color: #fff;
+}
+
+.banner {
+	width: 100%;
+	float: left;
+	position: relative;
+	min-height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.banner .banner-content {
+	float: left;
+	height: 100%;
+	position: relative;
+	display: inline-grid!important;
+	align-content: center;
+	width: 100%;
+	max-width: 530px;
+	min-height: 600px;
+}
+
+.banner .banner-content .banner-title {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-size: 30px;
+	color: #fff;
+}
+
+.banner .banner-content .banner-subtitle {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-size: 16px;
+	color: #fff;
+	max-width: 400px;
+	line-height: 24px;
+}
+
+.what-cbd {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 50px 0;
+}
+
+.what-cbd .cbd-box {
+	width: 100%;
+	float: left;
+	position: relative;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px #d5d5d5;
+	overflow: hidden;
+}
+
+.what-cbd .cbd-box .cbd-thumnail {
+	width: 100%;
+	float: left;
+	height: 190px;
+	background-position: center;
+	background-size: cover;
+}
+
+.what-cbd .cbd-box .cbd-content {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 15px;
+}
+
+.what-cbd .cbd-box .cbd-content .title {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.what-cbd .cbd-box .cbd-content .subtitle {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.section-heading {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.section-heading .section-title {
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.section-heading .section-subtitle {
+	font-size: 14px;
+	width: 100%;
+	max-width: 60%;
+	margin: 0 auto;
+	position: relative;
+	color: #8a8a8a;
+}
+
+.how-its-work {
+	background: #e1e1e13d;
+	width: 100%;
+	float: left;
+	padding: 50px 0;
+}
+
+.how-its-work .work-content-box {
+	width: 100%;
+	float: left;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.content-box {
+	width: 100%;
+	float: left;
+	position: relative;
+	min-height: 350px;
+	align-items: center;
+	display: inline-flex;
+	padding: 25px;
+}
+
+.content-box .inner-text {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.content-box .inner-text .title {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.content-box .inner-text .main-title {
+	width: 100%;
+	float: left;
+	position: relative;
+	font-size: 18px;
+	color: #00b129;
+	font-weight: 300;
+}
+
+.content-box .inner-text .subtitle {
+	width: 100%;
+	float: left;
+	position: relative;
+	line-height: 27px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.content-box .img-box {
+	width: 100%;
+	min-height: 261px;
+	line-height: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	box-shadow: 1px 5px 47px 0px #16092530;
+}
+
+.improver-life {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.improver-life .improved-bg {}
+
+.improver-life .improved-bg {
+	min-height: 350px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.n-margin {
+	margin: 0;
+}
+
+.n-padding {
+	padding: 0;
+}
+
+.cbd-product {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 40px 0;
+}
+
+.product-box {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.product-box .product-list-box {
+	padding: 112px 0 0 100px;
+}
+
+.product-box .product-list-box .product-list {}
+
+.product-box .product-list-box .product-list .product-box {
+	background: #000;
+}
+
+.product-box .product-list-box .product-list .product-box img {}
+
+.testimonial {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 50px;
+	background: #f8f8f8;
+}
+
+.testimonial .carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	background: #b9b9b9;
+	border-radius: 50%;
+}
+
+.testimonial .carousel-indicators li.active {
+	background: #160925;
+}
+
+.testimonial .testimonial-content {
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.testimonial .testimonial-content .inner-content {
+	width: 100%;
+	float: left;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.testimonial .testimonial-content .inner-content .client-pic {
+	width: 100px;
+	height: 100px;
+	display: inline-flex;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	margin-bottom: 20px!important;
+	margin: auto;
+}
+
+.testimonial .testimonial-content .inner-content .client-feedback {
+	width: 100%;
+	max-width: 60%;
+	display: inline-flex;
+	margin: 15px auto;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.testimonial .testimonial-content .inner-content .client-name {
+	font-size: 16px;
+	font-weight: 600;
+	color: #160925;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.form-box {
+	width: 100%;
+	float: left;
+	position: relative;
+	background: #0b0217;
+	padding: 50px 0;
+}
+
+.form-box .form-input-box {
+	width: 100%;
+	max-width: 470px;
+	margin: 0 auto;
+}
+
+.copyright {
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	background: #090113;
+	font-size: 13px;
+	color: #a5a5a5;
+}
+.form-box.w-padding {
+    padding: 130px 0;
+}
